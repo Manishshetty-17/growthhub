@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="aptitude-container">
+
+    <h1 class="page-title"> Aptitude Arena</h1>
+    <div class="title-line"></div>
+
+    <div class="aptitude-info">
+
+        <h2>What is Aptitude?</h2>
+
+        <p>
+            Aptitude tests measure your logical thinking,
+            problem-solving ability, numerical skills and
+            reasoning capability.
+        </p>
+
+        <p>
+            Most companies use aptitude tests as the first
+            round of placements to shortlist candidates.
+        </p>
+
+        <p>
+            Practicing aptitude improves speed, accuracy
+            and confidence during interviews and campus drives.
+        </p>
+
+    </div>
+
+    <div class="quote-box">
+        🚀 Every aptitude question solved today is one interview
+        question conquered tomorrow.
+    </div>
+
+    <div class="level-selection">
+
+        <h2>Select Difficulty Level</h2>
+
+        <button class="level-btn" onclick="startQuiz('easy')">
+            🟢 Easy
+        </button>
+
+        <button class="level-btn" onclick="startQuiz('medium')">
+            🟡 Medium
+        </button>
+
+        <button class="level-btn" onclick="startQuiz('hard')">
+            🟠 Hard
+        </button>
+
+        <button class="level-btn" onclick="startQuiz('expert')">
+            🔴 Expert
+        </button>
+
+    </div>
+
+    <div id="quiz-box" class="hidden">
+
+        <h2 id="question-number"></h2>
+        <h3 id="company-name"></h3>
+
+        <h3 id="question"></h3>
+
+        <div id="options"></div>
+
+        <button id="next-btn">
+            Next Question →
+        </button>
+
+    </div>
+
+    <div id="result-box" class="hidden">
+
+        <h2>🎉 Quiz Completed</h2>
+
+        <h3 id="score"></h3>
+
+        <p id="performance"></p>
+
+        <button onclick="location.reload()">
+            Try Again
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/aptitude.js"></script>
+
+</body>
+</html>

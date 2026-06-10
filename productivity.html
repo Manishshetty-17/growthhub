@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Hub | GrowthHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="productivity-hub">
+
+        <div class="container">
+
+            <h1>Student Productivity Dashboard</h1>
+
+            <!-- NAV -->
+            <div class="tabs">
+                <button onclick="showSection('attendance')">Attendance</button>
+                <button onclick="showSection('cgpa')">CGPA</button>
+                <button onclick="showSection('tasks')">Assignments</button>
+                <button onclick="showSection('pomodoro')">Pomodoro</button>
+            </div>
+
+            <!-- ATTENDANCE -->
+            <section id="attendance" class="card active">
+                <h2>Attendance Calculator </h2>
+
+                <input type="number" id="attended" placeholder="Classes Attended">
+                <input type="number" id="total" placeholder="Total Classes Conducted">
+                <input type="number" id="target" placeholder="Target % (default 75)">
+
+                <button onclick="calculateAttendance()">Calculate</button>
+
+                <div id="attendanceResult"></div>
+            </section>
+
+            <!-- CGPA -->
+            <section id="cgpa" class="card">
+                <h2>Performance Predictor </h2>
+
+                <div id="subjects"></div>
+
+                <button onclick="addSubject()">+ Add Subject</button>
+                <button onclick="calculateCGPA()">Predict CGPA</button>
+
+                <input type="number" id="targetCGPA" placeholder="Target CGPA (optional)">
+
+                <p id="cgpaResult"></p>
+            </section>
+
+            <!-- TASKS -->
+            <section id="tasks" class="card">
+                <h2>Assignment Tracker </h2>
+
+                <input type="text" id="taskInput" placeholder="Enter assignment">
+
+                <input type="date" id="taskDate">
+
+                <select id="taskPriority">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+
+                <button onclick="addTask()">Add Assignment</button>
+
+                <p id="taskStats"></p>
+
+                <div id="taskList"></div>
+            </section>
+
+            <!-- POMODORO -->
+            <section id="pomodoro" class="card">
+                <h2>Pomodoro Timer </h2>
+
+                <div id="timer">25:00</div>
+
+                <p id="mode">Focus Mode 🎯</p>
+                <p id="session">Sessions Completed: 0</p>
+
+                <button onclick="startTimer()">Start</button>
+                <button onclick="pauseTimer()">Pause</button>
+                <button onclick="resetTimer()">Reset</button>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="js/productivity.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmap | GrowthHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="career-page">
+<div class="container">
+
+    <h1>🗺 Career Roadmap Generator</h1>
+
+    <p class="quote">
+       "Every expert was once a beginner who chose not to quit."
+    </p>
+
+    <div class="planner-card">
+
+        <label>Select Career Path</label>
+
+        <select id="career">
+
+            <option value="">Choose Career</option>
+
+            <option value="software">
+                Software Engineer
+            </option>
+
+            <option value="cyber">
+                Cybersecurity Engineer
+            </option>
+
+            <option value="fullstack">
+                Full Stack Developer
+            </option>
+
+            <option value="data">
+                Data Analyst
+            </option>
+
+            <option value="aiml">
+                AI / ML Engineer
+            </option>
+
+        </select>
+
+        <button onclick="generateRoadmap()">
+            Generate Roadmap
+        </button>
+
+    </div>
+
+    <div id="roadmapResult"></div>
+
+</div>
+</div>
+
+<script src="js/roadmap.js"></script>
+
+</body>
+</html>

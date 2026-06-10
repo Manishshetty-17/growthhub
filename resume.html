@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     Resume Builder | GrowthHub</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="header">
+
+    <h1> Resume Builder</h1>
+    </div>
+
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter phone number">
+    </div>
+
+    <div class="form-group">
+        <label>LinkedIn Profile</label>
+        <input type="text" id="linkedin" placeholder="LinkedIn URL">
+    </div>
+
+    <div class="form-group">
+        <label>GitHub Profile</label>
+        <input type="text" id="github" placeholder="GitHub URL">
+    </div>
+
+
+    <div class="form-group">
+        <label>Career Objective</label>
+        <textarea id="objective"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Education</label>
+        <textarea id="education"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label> Skills</label>
+        <textarea id="skills"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Projects</label>
+        <textarea id="projects"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Experience / Internship</label>
+        <textarea id="experience"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Certificates</label>
+        <textarea id="certificates"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>Achievements</label>
+        <textarea id="achievements"></textarea>
+    </div>
+
+    
+    <button onclick="generateResume()">
+        Preview Resume
+    </button>
+
+    <button onclick="downloadPDF()">
+        Generate & Download Resume
+    </button>
+
+    <hr style="margin:40px 0;">
+
+    <div id="resumeOutput"></div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/resume.js"></script>
+
+</body>
+</html>

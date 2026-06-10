@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interview Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mock-interview-container">
+
+    <h1 class="mock-title">🎤 Mock Interview Studio</h1>
+
+    <div class="mock-title-line"></div>
+
+    <p class="mock-subtitle">
+        Practice real interview questions and improve your confidence.
+    </p>
+
+    <div class="interview-selection">
+
+        <h2>Select Interview Type</h2>
+        <div class="interview-note">
+    🎯 Technical Interview Studio focuses on conceptual and theory-based interview questions.
+
+    <br><br>
+
+    💻 Looking for coding interview practice?
+
+    Head over to <strong>DSA Arena</strong> to solve real coding challenges,
+    data structures, algorithms, and company-style programming questions.
+</div>
+
+        <button onclick="startHRInterview()">
+            🎤 HR Interview
+        </button>
+
+        <button onclick="startTechnicalInterview()">
+            💻 Technical Interview
+        </button>
+
+    </div>
+    <div id="stream-selection" class="hidden">
+
+    <h2>Select Stream</h2>
+
+    <button onclick="startTechnicalStream('software')">
+        Software Engineering
+    </button>
+
+    <button onclick="startTechnicalStream('web')">
+        Web Development
+    </button>
+
+    <button onclick="startTechnicalStream('cyber')">
+        Cyber Security
+    </button>
+
+    <button onclick="startTechnicalStream('data')">
+        Data Science
+    </button>
+
+    <button onclick="startTechnicalStream('cloud')">
+        Cloud Computing
+    </button>
+
+</div>
+
+    <div id="question-box" class="hidden">
+
+        <h3 id="question-number"></h3>
+
+        <h2 id="question"></h2>
+
+        <button id="show-answer-btn">
+            Show Sample Answer
+        </button>
+
+        <div id="answer-box" class="hidden">
+            <p id="answer"></p>
+        </div>
+
+        <br><br>
+
+        <button id="next-btn">
+            Next Question →
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/mockinterview.js"></script>
+
+</body>
+</html>

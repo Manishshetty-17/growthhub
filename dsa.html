@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Arena</title>
+    <!-- same structure as aptitude -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dsa-container">
+
+    <h1 class="page-title">DSA Arena</h1>
+    <div class="title-line"></div>
+
+    <div class="info-banner">
+        This DSA Arena focuses on core interview problems.
+        For more problems, patterns, and language variations,
+        you can explore
+        <a href="https://leetcode.com" target="_blank">LeetCode</a>
+        for advanced practice.
+    </div>
+
+    <!-- INTRO SECTION -->
+    <div class="aptitude-info">
+
+        <h2>What is DSA?</h2>
+
+        <p>
+            Data Structures and Algorithms (DSA) help you
+            solve problems efficiently using structured logic
+            and optimized coding approaches.
+        </p>
+
+        <p>
+            Companies use DSA rounds to test your problem
+            solving skills, coding ability and logical thinking.
+        </p>
+
+        <p>
+            Practicing DSA improves your coding confidence,
+            helps in placements, and builds strong programming
+            fundamentals.
+        </p>
+
+    </div>
+
+    <!-- MOTIVATION BOX -->
+    <div class="quote-box">
+        🚀 Every problem you solve brings you closer to your dream job.
+    </div>
+
+    <!-- TOPICS -->
+    <div class="level-selection">
+
+        <h2>Select Topic</h2>
+
+        <button class="level-btn" onclick="openTopic('arrays')">
+            📦 Arrays
+        </button>
+
+        <button class="level-btn" onclick="openTopic('strings')">
+            🔤 Strings
+        </button>
+
+        <button class="level-btn" onclick="openTopic('linkedlist')">
+            🔗 Linked List
+        </button>
+
+        <button class="level-btn" onclick="openTopic('stack')">
+            📚 Stack
+        </button>
+
+        <button class="level-btn" onclick="openTopic('queue')">
+            🚶 Queue
+        </button>
+
+        <button class="level-btn" onclick="openTopic('trees')">
+            🌳 Trees
+        </button>
+
+        <button class="level-btn" onclick="openTopic('graphs')">
+            🕸 Graphs
+        </button>
+
+        <button class="level-btn" onclick="openTopic('dp')">
+            📊 Dynamic Programming
+        </button>
+
+    </div>
+
+    <!-- QUESTION AREA -->
+    <div id="dsa-box" class="hidden">
+
+        <h2 id="topic-title"></h2>
+
+        <div id="question-area"></div>
+
+        <br>
+
+        <button class="level-btn" onclick="goBack()">
+            ⬅ Back
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/dsa.js"></script>
+
+</body>
